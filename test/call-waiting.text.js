@@ -1,5 +1,7 @@
 import { expect } from 'chai'
 import sinon from 'sinon'
+import 'babel-polyfill'
+
 import CallWaiting from '../src/call-waiting'
 
 describe('CallWaiting', () => {

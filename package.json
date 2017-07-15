@@ -4,13 +4,20 @@
   "description": "Allows a user to initialize a method call with arguments to be called at a later date.. The method can continue to have arguments added over time until it is invoked.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run compile && mocha --compilers js:babel-core/register",
+    "compile": "babel --presets es2015 -d lib/ src/"
   },
   "author": "Postazure",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-preset-es2015": "^6.24.1",
     "chai": "^4.1.0",
     "mocha": "^3.4.2",
     "sinon": "^2.3.8"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.23.0"
   }
 }
