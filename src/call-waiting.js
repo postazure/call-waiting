@@ -5,6 +5,7 @@ export default {
     f.argsToCallWith = args
     f.args = (...newArgs) => {
       f.argsToCallWith.push(...newArgs)
+      return f
     }
 
     return f

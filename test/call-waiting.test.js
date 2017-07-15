@@ -50,5 +50,13 @@ describe('CallWaiting', () => {
 
       expect(testFunction).to.have.been.calledWith('arg1', 'arg2', 'arg3')
     })
+
+    it('should be chain-able', () => {
+      let functionToCall = CallWaiting.init(testFunction, 'arg1')
+
+      functionToCall.args('arg2', 'arg3')()
+
+      expect(testFunction).to.have.been.calledWith('arg1', 'arg2', 'arg3')
+    })
   })
 })
