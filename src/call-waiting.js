@@ -1,6 +1,6 @@
 export default {
   init(func, ...args) {
-    let f = () => func(...f.argsToCallWith)
+    let f = (...newArgs) => func(...f.argsToCallWith, ...newArgs)
 
     f.argsToCallWith = args
     f.args = (...newArgs) => {

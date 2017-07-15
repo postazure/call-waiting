@@ -22,6 +22,14 @@ describe('CallWaiting', () => {
       expect(testFunction).to.have.been.called
     })
 
+    it('should call the initialized function with provided arguments', () => {
+      let functionToCall = CallWaiting.init(testFunction)
+
+      functionToCall('arg1')
+
+      expect(testFunction).to.have.been.calledWith('arg1')
+    })
+
     describe('when there callWaiting is initialized with args', () => {
       it('should call the function with those args', () => {
         let functionToCall = CallWaiting.init(testFunction, 'arg1', 'arg2')
