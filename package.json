@@ -7,8 +7,20 @@
     "test": "npm run compile && mocha --compilers js:babel-core/register",
     "compile": "babel -d lib/ src/"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/postazure/call-waiting"
+  },
+  "keywords": [
+    "function",
+    "arguments",
+    "call",
+    "invoke",
+    "npm",
+    "javascript"
+  ],
   "author": "Postazure",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
