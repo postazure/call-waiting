@@ -1,0 +1,16 @@
+{
+  "name": "call-waiting",
+  "version": "1.0.0",
+  "description": "Allows a user to initialize a method call with arguments to be called at a later date.. The method can continue to have arguments added over time until it is invoked.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Postazure",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2",
+    "sinon": "^2.3.8"
+  }
+}
